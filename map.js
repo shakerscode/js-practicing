@@ -15,7 +15,7 @@ console.log(output);
 
 //At first we did our oldest way to dubble a number. there we need to do three things. but we can do it only in a one line that i have been shown top of this paragrap. it is kind of loop that run the function. 
 
-//More mapping in js!
+//More ping in js!
 
 const name = ['harry hi', 'potter', 'shaker', 'tasfi' ];
 
