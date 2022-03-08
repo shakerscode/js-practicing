@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" background-color : rgb(138, 226, 241);">
+    
+<h1 style="color: white">
+    Hello World
+</h1>
+<!-- <header>
+    <h1 style="text-align: center; color: white"> Welcome To My blog</h1>
+</header>
+<main> 
+    <section>
+        <article>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo necessitatibus dolores officiis optio unde. Nostrum quos maxime veniam totam dolorem! Autem tempore eius esse quos a. Nostrum a consequatur voluptatum.
+            </p>
+        </article>
+        <article>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo necessitatibus dolores officiis optio unde. Nostrum quos maxime veniam totam dolorem! Autem tempore eius esse quos a. Nostrum a consequatur voluptatum.
+            </p>
+        </article>
+        <article>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo necessitatibus dolores officiis optio unde. Nostrum quos maxime veniam totam dolorem! Autem tempore eius esse quos a. Nostrum a consequatur voluptatum.
+            </p>
+        </article>
+        <article>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo necessitatibus dolores officiis optio unde. Nostrum quos maxime veniam totam dolorem! Autem tempore eius esse quos a. Nostrum a consequatur voluptatum.
+            </p>
+        </article>
+    </section>
+</main> -->
+    
+<section id="section-item">
+    <ul id="ul-item">
+        <li id="items">list1</li>
+        <li id="items">List2</li>
+        <li id="items">List3</li>
+        <li id="items">List4</li>
+        <li id="items">list5</li>
+    </ul>
+    <button id="button"> Click Me!!</button>
+</section>
+
+<script> 
+//Adding new items in html!
+    document.getElementById('button').addEventListener('click', function(){
+        const li = document.createElement('li');
+        li.innerText = 'Hii! I m new li!'
+        document.getElementById('ul-item').appendChild(li);
+    }) 
+
+    document.getElementById('ul-item').addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target);
+
+    })
+
+</script>
+
+
+
+
+
+    <script src="dom.js"></script>
+</body>
+</html>

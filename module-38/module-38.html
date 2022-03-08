@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Module no 38</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            margin-top: 10px;
+        }
+        #btn{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 10px 30px;
+            background-color: rgb(5, 226, 226);
+            font-size: 25px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+         }
+        #btn-2{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 10px 30px;
+            background-color: rgb(5, 226, 226);
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            display: none;
+         }
+         #btn-3{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 10px 30px;
+            background-color: rgb(5, 226, 226);
+            font-size: 25px;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+         #hiding-button , #settimeout{
+            display: none;
+         }
+         p{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+             
+         }
+         #inpot-one, #input-two{
+            margin-bottom: 20px;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgb(19, 214, 117);
+            border-radius: 10px;
+             
+         }
+         .btn{
+             display: flex;
+             margin: auto;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 5px;
+             font-size: 20px;
+             color: black;
+             background-color: rgb(19, 214, 117);
+             cursor: pointer;
+         }
+    </style>
+</head>
+<body>
+    <h1>Exploring Module no 38</h1>
+    <h2>Using setTimeOut</h2>
+    <p>The setTimeout() method calls a function after a number of milliseconds. Like 1 second = 1000 milliseconds.</p>
+    <p> <b> Notes: </b><br>
+        The setTimeout() is executed only once. <br>
+        If you need repeated executions, use setInterval() instead.
+        Use the clearTimeout() method to prevent the function from starting. <br>
+        To clear a timeout, use the id returned from setTimeout():</p>
+        <p> <b> clearTimeout(): </b> <br>
+            The global clearTimeout() method cancels a timeout previously established by calling setTimeout().</p>
+    <button id="btn" onclick="clcikingBtn()">Click here</button>
+    <div id="hiding-button">
+        <h2>Developer Shaker Ahamed Is Coding...</h2>
+        <p>Hello I am comming Home</p>
+        <p>Hello I am also comming Home</p>
+        <h3>Wait please!!!!!!!</h3>
+    </div>
+    <div id="settimeout">
+        <h5>Hey! Do you know that you see me 5s or 5000ms later after clicking the button above? Isn't it cool?</h5>
+    </div>
+    <button id="btn-3" onclick="clearingBtn()">Clear Timeout</button>
+    <button id="btn-2" onclick="clearingTimeout()">Click Here to Clear</button>
+    
+    <h1>Set Timeout</h1>
+    <br>
+    <div class="mydiv">
+        <p id="inpot-one">0</p>
+        <p id="input-two">0</p>
+    </div>
+    <button onclick="settingInterval()" class="btn">Click Here</button>
+    <script src="module-38.js"></script>
+</body>
+</html>
