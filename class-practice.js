@@ -116,17 +116,68 @@ const newArr = [23, 32, ...arr, 455, 45, ...arr3]
 
 //map
 const persons = [
-    {firstname : "Malcom", lastname: "Reynolds"},
-    {firstname : "Kaylee", lastname: "Frye"},
-    {firstname : "Jayne", lastname: "Cobb"}
+    {firstname : "Malcom", lastname: "Reynolds", price: 3900},
+    {firstname : "Kaylee", lastname: "Frye", price: 4900},
+    {firstname : "Jayne", lastname: "Cobb", price: 3000}
   ];
+  // console.log(persons.firstname)
   
 const arr4 =  persons.map((person) => person.lastname) 
-console.log(arr4);
+// console.log(arr4);
 
 //forEach
+const decArr  = [21, 21, 34, 42, 55, 16, 17, 18, 9, 10, 144];
+// decArr.forEach ( darr => console.log(darr));
+// persons.forEach(p => console.log(p.price))
+
 //filter
+const resOne = persons.filter(p => p.price > 3000);
+
+// console.log(resOne);
+
+const res2 = decArr.filter(n => n >  55)
+
+// console.log(res2);
 //find
+const resTwo = persons.find(p => p.price === 3000);
+// console.log(resTwo);
+
 //array destructuring
+const anArray = [
+  {name: 'taggggsfi',
+        op:{
+            h: 'tt',
+            iid: 34,
+            gh: "dfhrtj"
+          },
+  vil: 'gggdt', 
+  id: 1033300
+}
+  // {name: 'tasgggfi', vil: 'dccct', id: 1004430},
+  // {name: 'tatttttsfi', vil: 'vvvdt', id: 104400},
+  // {name: 'taeeeesfi', vil: 'dccct', id: 10400}
+]
+
+// const [name, vil, id] = anArray;
+// console.log(name)
+
+const [names, vl, ids, pa] = [ 'tasfi', 100000, 010, 'dsfjf']
+// console.log(names, vl)
+
 //array.includes
+
 //optional chaining
+const varr = [
+ { 
+   nameee: 'tasfi',
+   id: 234,
+   job: 'developer',
+   workplace:{
+     addr:'dhk',
+     offid: 34
+   },
+   vill: 'dltpr'
+}
+]
+
+console.log(varr[0].workplace?.addr)// we can use the same way into the object method.
